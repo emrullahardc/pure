@@ -554,6 +554,7 @@ CREATE DATABASE IF NOT EXISTS pure;
 EOF
 clear
 sudo rm -rf /var/www
+mkdir /var/www
 cd /var/www && git clone https://github.com/$REPO.git .
 cd /var/www && sudo cp .env-sail .env
 
