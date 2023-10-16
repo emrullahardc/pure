@@ -561,7 +561,7 @@ cd /var/www && sudo cp .env-sail .env
 sudo rpl -i -w "DB_HOST=host.docker.internal" "DB_HOST=localhost" /var/www/.env
 sudo rpl -i -w "DB_USERNAME=oc" "DB_USERNAME=pure" /var/www/.env
 sudo rpl -i -w "DB_PASSWORD=oc" "DB_PASSWORD=$DBPASS" /var/www/.env
-sudo rpl -i -w "DB_DATABASE=oc" "DB_DB_DATABASE=pure" /var/www/.env
+sudo rpl -i -w "DB_DATABASE=oc" "DB_DATABASE=pure" /var/www/.env
 sudo rpl -i -w "APP_URL=http://localhost" "APP_URL=http://$IP" /var/www/.env
 
 
