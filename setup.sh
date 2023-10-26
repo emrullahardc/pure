@@ -572,7 +572,7 @@ sudo chmod -R o+w /var/www/bootstrap/cache
 sudo chmod -R 777 /var/www/bootstrap/cache
 cd /var/www && composer update --no-interaction
 cd /var/www && php artisan install --ready
-cd /var/www && php artisan servers:update_server_credentials 33f66b6e-732a-11ee-b962-0242ac12000 $IP  $PASS $DBPASS
+cd /var/www && php artisan servers:update_server_credentials "" $IP  $PASS $DBPASS
 
 PUBKEYGH=/var/www/public/ghkey_$SERVERID.php
 sudo touch $PUBKEYGH
